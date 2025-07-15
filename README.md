@@ -82,6 +82,8 @@ go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
 # Create genesis binary directory
 mkdir -p $HOME/.tacchaind/cosmovisor/genesis/bin
+mkdir -p /root/.tacchaind/cosmovisor/upgrades/v1.0.1/bin
+cp build/tacchaind /root/.tacchaind/cosmovisor/upgrades/v1.0.1/bin/
 cp build/tacchaind $HOME/.tacchaind/cosmovisor/genesis/bin/
 
 # Create system symlinks
